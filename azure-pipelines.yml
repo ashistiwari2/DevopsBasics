@@ -22,7 +22,7 @@ steps:
     goals: 'package'
 - task: WindowsMachineFileCopy@2
   inputs:
-    SourcePath: 'C:\agent\_work\r1\a'
+    SourcePath: '$(Build.Repository.LocalPath)'
     MachineNames: '192.168.130.234'
     AdminUserName: 'MQ955SE'
     AdminPassword: 'bewakoof@hacker.9563433265'
